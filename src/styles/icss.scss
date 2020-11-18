@@ -103,3 +103,29 @@
     -o-transform: scaleY(0.5);
   }
 }
+.box1{
+  display: flex;
+  & + .box1{
+    margin-top: 20px;
+  }
+  .list{
+    border: 1px solid #f66;
+    width: 200px;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f66;
+    & + .list{
+      margin-left: 20px;
+    }
+    li{
+      padding: 0 10px;
+    }
+    .curr{
+      background-color: aquamarine;
+      & + li{
+        background-color: bisque;
+      }
+    }
+  }
+}

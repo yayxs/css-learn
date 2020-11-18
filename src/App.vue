@@ -13,7 +13,31 @@
   <ul class="custom-loading">
     <li v-for="(ele) in 6" :key="ele"></li>
   </ul>
-  <h3>标签导航</h3>
+  <h3>选择器的应用</h3>
+  <div class="box1">
+    <ul class="list">
+      <li>同胞元素</li>
+      <li class="curr">当前的元素</li>
+      <li>同胞元素</li>
+      <li>同胞元素</li>
+      <li>同胞元素</li>
+    </ul>
+    <ul class="list">
+      <li>同胞元素</li>
+      <li class="next">当前的元素</li>
+      <li>同胞元素</li>
+      <li>同胞元素</li>
+      <li>同胞元素</li>
+    </ul>
+    <ul class="list">
+      <li>同胞元素</li>
+      <li class="next">当前的元素</li>
+      <li>同胞元素</li>
+      <li>同胞元素</li>
+      <li>同胞元素</li>
+    </ul>
+  </div>
+  <div class="box1"></div>
 </template>
 <style lang="scss">
    @import "./styles/index.scss"; 

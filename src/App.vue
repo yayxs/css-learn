@@ -4,14 +4,11 @@
   <!-- <a class="hover-tips btn-2" href="#0"></a> -->
   <h3>单位计算函数calc()</h3>
   <section class="ele-box">
-    测试文字测试文字测试
-    文字测试文字测试文字
-    测试文字测试文字测试文字
-    测试文字
+    测试文字测试文字测试 文字测试文字测试文字 测试文字测试文字测试文字 测试文字
   </section>
   <h3>条形加载条</h3>
   <ul class="custom-loading">
-    <li v-for="(ele) in 6" :key="ele"></li>
+    <li v-for="ele in 6" :key="ele"></li>
   </ul>
   <h3>选择器的应用</h3>
   <div class="box1">
@@ -38,16 +35,21 @@
     </ul>
   </div>
   <div class="box1"></div>
+  <p class="p-box">
+    <span>:before</span>
+    CSS
+    <span>:after</span>
+  </p>
+  <p class="p-box1">CSS</p>
+  <div class="box-bg"></div>
+  <div class="loukong"></div>
 </template>
 <style lang="scss">
-   @import "./styles/index.scss"; 
+@import "./styles/index.scss";
 </style>
 <script>
-
 export default {
-  name: 'App',
-  components: {
-   
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>

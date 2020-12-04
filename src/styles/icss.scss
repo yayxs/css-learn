@@ -129,23 +129,3 @@
     }
   }
 }
-
-.p-box{
-  &::before{
-    content: 'before';
-  }
-  &::after{
-    content: 'after';
-  }
-}
-.box-bg{
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ddd;
-  background-color: cornsilk;
-  background-image: url('https://yayxs.github.io/avatar.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  // background-size: 200px 200px;
-  background-size: contain;
-}

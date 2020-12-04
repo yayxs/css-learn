@@ -1,29 +1,78 @@
 <template>
-  <h3>属性函数attr()</h3>
-  <a class="hover-tips btn-1" href="#0" data-msg="点击登录">登录</a>
-  <!-- <a class="hover-tips btn-2" href="#0"></a> -->
-  <h3>单位计算函数calc()</h3>
-  <section class="ele-box">
-    测试文字测试文字测试
-    文字测试文字测试文字
-    测试文字测试文字测试文字
-    测试文字
-  </section>
-  <h3>条形加载条</h3>
-  <ul class="custom-loading">
-    <li v-for="(ele) in 6" :key="ele"></li>
-  </ul>
-  <h3>标签导航</h3>
+  <div id="app">
+    <ul id="menu">
+      <li data-menuanchor="page1" class="active">
+        <a href="#page1">第一部分</a>
+      </li>
+      <li data-menuanchor="page2"><a href="#page2">Section 2</a></li>
+      <li data-menuanchor="page3"><a href="#page3">Section 3</a></li>
+      <li>
+        <a
+          href="https://twitter.com/imac2"
+          target="_blank"
+          rel="noopener"
+          class="twitter-share"
+        >
+          <i>
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"
+              ></path>
+            </svg>
+          </i>
+        </a>
+      </li>
+    </ul>
+    <ul class="actions">
+      <li>
+        <a class="actions-button" href="#" rel="noopener" @click="addSection"
+          >Add section</a
+        >
+      </li>
+      <li>
+        <a class="actions-button" href="#" rel="noopener" @click="removeSection"
+          >Remove section</a
+        >
+      </li>
+      <li>
+        <a
+          class="actions-button"
+          href="#"
+          rel="noopener"
+          @click="toggleNavigation"
+          >Toggle nav</a
+        >
+      </li>
+      <li>
+        <a
+          class="actions-button"
+          href="#"
+          rel="noopener"
+          @click="toggleScrollbar">Toggle scrollBar</a>
+      </li>
+    </ul>
+  </div>
 </template>
-<style lang="scss">
-   @import "./styles/index.scss"; 
-</style>
-<script>
 
+<script>
 export default {
-  name: 'App',
-  components: {
-   
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
+
+<style>
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+</style>
